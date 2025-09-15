@@ -1,9 +1,12 @@
 <?php
 $str = "La Plateforme";
 $str2 = "Vive ";
-$str3 = " ! ";
+$str3 = " ! <br> ";
 echo $str2 . $str . $str3;
-$val = 64;
+
+$val = 6+4;
+$myBool = false;
+echo $myBool;
 
 echo $val
 
