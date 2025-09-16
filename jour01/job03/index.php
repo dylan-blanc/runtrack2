@@ -1,6 +1,10 @@
 <?php
+
 $monBool = true;
 $monEntier = 42;
+if (isset($_GET['nombre']) && $_GET['nombre'] != "") {
+    $monEntier = $_GET['nombre'];
+}
 $maChaine = "Bonjour bonjour";
 $maDecimal = 2.012;
 
@@ -42,22 +46,22 @@ echo $tbl;
 
 <head>
 
-	<meta charset="utf-8">
-	<title>Blabla</title>
-	<link href="Atemplate.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Blabla</title>
+    <link href="Atemplate.css" rel="stylesheet">
 
 </head>
 
 <body>
-	<header>
-		<h1>TEST</h1>
-	</header>
+    <header>
+        <h1>TEST</h1>
+    </header>
 
 
 
-	<footer>
+    <footer>
 
-	</footer>
+    </footer>
 </body>
 
 </html>
