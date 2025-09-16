@@ -2,7 +2,7 @@
 $monBool = true;
 $monEntier = 42;
 $maChaine = "Bonjour bonjour";
-$monFloat = 2.012;
+$maDecimal = 2.012;
 
 $tbl = "<table border='1'>
         <tr>
@@ -26,9 +26,9 @@ $tbl = "<table border='1'>
             <td>$maChaine</td>
         </tr>
         <tr>
-            <td>Float</td>
-            <td>monFloat</td>
-            <td>$monFloat</td>
+            <td>decimal</td>
+            <td>maDecimal</td>
+            <td>$maDecimal</td>
         </tr>
     </table>";
 
