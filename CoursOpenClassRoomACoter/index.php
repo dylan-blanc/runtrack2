@@ -34,11 +34,13 @@ echo (10 + 5) * (3 / 2) . "\n"; // 15*1.5 > 22.5 (parenthèse avant multiplicati
 echo 10 + (5 * 3) / 1.2 . "\n"; // 10+15/1.2 > 22.5 (parenthèse avant division)
 echo ($premiernombre + $deuxiemenombre) * ($premiernombre / $deuxiemenombre) - (7 + 0.5) . "\n"; // (10+5)*(10/5)-(7+0.5) > 15*2-7.5 > 30-7.5 > 22.5 (parenthèse avant multiplication avant division avant soustraction avant addition)
 
-for ($i = 1; $i <= 22.5; $i += 1) {
-    if ($i == 20)   {
-        else 
-    echo $i . "\n"; // affiche les chiffres de 1 à 22.5
-}
+for ($i = 1; $i <= 22.5; $i += 1) 
+    if ($i > 21) {
+        echo ($i += 0.5);
+    }
+    else {
+        echo $i . "\n";
+    }
 
 ?>
 
