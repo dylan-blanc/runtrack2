@@ -1,0 +1,9 @@
+.PhPvaleurNombre img {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 0;
+  width: 200px;
+  height: 300px;
+  z-index: 1000;
+}
