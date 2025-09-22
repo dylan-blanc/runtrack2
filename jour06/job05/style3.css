@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  font-size: 34px;
+}
+
+html {
+  background: white;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  border: 4px solid #000000;
+  text-align: center;
+  
+}
+
+.formulaire {
+  margin-top: 150px;
+  margin-left: 35%;
+  height: 100%;
+  width: 350px;
+  text-align: center;
+  border: 4px solid #000000;
+}
+.formulaire option {
+    text-align: center;
+}
+
+.formulaire ul {
+  list-style-type: none;
+}
+
+.dropdown {
+  background: #2d282d;
+  color: white;
+  border-radius: 8px;
+  min-width: 180px;
+  padding: 6px 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  z-index: 1001;
+}
+
+.option0 {
+  background: #000000;
+  color: white;
+}
+
+.option1 {
+  background: blue;
+  color: black;
+}
+
+.option2 {
+  background: white;
+  color: black;
+}
+
+.option3 {
+  background: red;
+  color: black;
+}
+
+button {
+  background: #2d282d;
+  color: white;
+  border-radius: 8px;
+  min-width: 260px;
+  padding: 6px 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  z-index: 1001;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(255, 255, 255);
+  color: black;
+}
+
+.option1:hover, .option2:hover, .option3:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}

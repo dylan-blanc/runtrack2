@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+html {
+  background: white;
+  height: 100%;
+  width: 100%;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+header {
+  background: #ffffff;
+  border: 4px solid #000000;
+  color: rgb(0, 0, 0);
+}
+
+.formulaire {
+  padding-right: 100px;
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.dropdown {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 3px solid #000000;
+  border-radius: 10px;
+  min-width: 180px;
+  padding: 6px 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  z-index: 1001;
+  text-shadow: 2px 2px 4px #000000;
+}
