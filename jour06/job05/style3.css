@@ -49,18 +49,8 @@ header {
   color: white;
 }
 
-.option1 {
-  background: blue;
-  color: black;
-}
-
-.option2 {
-  background: white;
-  color: black;
-}
-
-.option3 {
-  background: red;
+.option1, .option2, .option3 {
+  background: linear-gradient(to right, #002153 33%, white 33% 66%, #cf0821 66% 100%);
   color: black;
 }
 

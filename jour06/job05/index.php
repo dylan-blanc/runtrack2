@@ -4,10 +4,10 @@
 <?php
 $style = 'style0.css'; // Valeur par défaut
 
-if (isset($_GET['style'])) {
-    $choix = $_GET['style'];
+if (isset($_GET['style'])) {  // Vérifie si une valeur a été envoyée via le formulaire
+    $choix = $_GET['style'];  // Récupère la valeur sélectionnée dans le formulaire
     if (in_array($choix, ['style0', 'style1', 'style2', 'style3'])) {
-        $style = $choix . '.css';
+        $style = $choix . '.css'; // $choix = $get (resultat du formulaire) => style0-3.css
     }
 }
 
@@ -17,7 +17,7 @@ if (isset($_GET['style'])) {
 <head>
     <meta charset="utf-8" />
     <title>Ma page web</title>
-    <link href="<?php echo $style; ?>" rel="stylesheet">
+    <link href="<?= $style; ?>" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -44,8 +44,8 @@ if (isset($_GET['style'])) {
 
                 <li>
                     <label for="style">Style</label>
-                    <select class="dropdown" id="style" name="style" size="<?php echo (isset($_GET['style']) && $_GET['style'] === 'style3') ? 4 : null; ?>">
-                        <option class="option0" value="style0">Style par défaut</option>
+                    <select class="dropdown" id="style" name="style" size="<?= (isset($_GET['style']) && $_GET['style'] === 'style3') ? 4 : null; ?>">  <!-- si style3 est sélectionné, afficher 4 options sinon l'affichage de base -->
+                        <option class="option0" value="style0">Style de base</option>
                         <option class="option1" value="style1">Style 1</option>
                         <option class="option2" value="style2">Style 2</option>
                         <option class="option3" value="style3">Style 3</option>
@@ -69,7 +69,7 @@ if (isset($_GET['style'])) {
                 </li> -->
             </ul>
             <div>
-                <button type="submit">Envoyer </button>
+                <button type="submit">Envoyer</button>
             </div>
         </form>
     </div>
