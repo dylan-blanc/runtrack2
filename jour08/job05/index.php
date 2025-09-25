@@ -18,12 +18,12 @@ if (!isset($_COOKIE['player_id'])) {
 
     <head>
         <meta charset="utf-8" />
-        <title>Sélection du joueur</title>
+        <title>blabla</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
-        <h2>Choisissez votre joueur</h2>
+        <h2>C'est Full AI je voulais juste voir le code</h2>
         <form method="post">
             <input type="hidden" name="player_id" value="1">
             <button type="submit" name="select_player" value="1">
