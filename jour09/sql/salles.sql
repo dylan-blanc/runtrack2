@@ -1,0 +1,14 @@
+CREATE TABLE salles (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(255),
+    id_etage INT,
+    capacite INT
+);
+
+INSERT INTO salles (id, nom, id_etage, capacite) VALUES
+(1, 'Lounge', 1, 100),
+(2, 'Studio Son', 1, 5),
+(3, 'Broadcasting', 2, 50),
+(4, 'Bocal Peda', 2, 4),
+(5, 'Coworking', 2, 80),
+(6, 'Studio Video', 2, 5);
