@@ -12,7 +12,10 @@ $CeciEstUneDecimal = 0.5; // Nombre décimal ou float
 $CeciEstUnBoolean = true; // deux valeur soit True ou false^
 $CeciaAucuneValeur = null; // valeur nulle, vide, rien
 
-echo NULL; // echo affiche une variable
+echo $variable; // echo affiche une variable
+echo (function() {
+    return "Ceci est une fonction";
+})();  // affiche le résultat de la fonction
 
 
 // /////////////////////////////////////////CHIFFRES EN PHP/////////////////////////////////////////
